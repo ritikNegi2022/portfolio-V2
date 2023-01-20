@@ -7,6 +7,12 @@ module.exports = nextConfig
 
 
 module.exports = {
+  images: {
+    loader: "akamai",
+    path: "",
+  },
+};
+module.exports = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
