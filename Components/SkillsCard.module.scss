@@ -1,0 +1,112 @@
+.cardContainer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.555);
+  backdrop-filter: blur(10px);
+  filter: var(--text-color);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: var(--container-bg);
+  backdrop-filter: blur(10px);
+  .bar {
+    margin: 0.7rem 0;
+
+    .progressLine {
+      position: relative;
+      height: 10px;
+      width: 100%;
+      background-color: var(--title-color);
+      border-radius: 1rem;
+      margin-top: 0.2rem;
+      span {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        background-color: var(--bg);
+        border-radius: 1rem;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: load 1s ease forwards;
+      }
+    }
+  }
+}
+.progressLine {
+  span:after {
+    position: absolute;
+    right: 0;
+    transform: translateY(50%);
+    bottom: 50%;
+    font-size: 1.2vw;
+    content: "";
+    color: var(--title-color);
+    background-color: var(--bg);
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: reveal 1s ease forwards;
+    border: 2px solid grey;
+  }
+}
+.info {
+  color: white;
+  filter: var(--text-color);
+}
+#html {
+  width: 75%;
+}
+#html::after {
+  content: "75%";
+}
+#css {
+  width: 80%;
+}
+#css::after {
+  content: "80%";
+}
+#javascript {
+  width: 64%;
+}
+#javascript::after {
+  content: "64%";
+}
+#reactJs {
+  width: 52%;
+}
+#reactJs::after {
+  content: "52%";
+}
+#nextJs {
+  width: 30%;
+}
+#nextJs::after {
+  content: "30%";
+}
+#python {
+  width: 60%;
+}
+#python::after {
+  content: "60%";
+}
+@keyframes load {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes reveal {
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .progressLine {
+    span::after {
+      font-size: 2vw;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    padding: 1rem 0.5rem;
+  }
+}

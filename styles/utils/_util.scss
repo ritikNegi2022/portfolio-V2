@@ -1,0 +1,32 @@
+@mixin just-flex($orientation, $gap: 0){
+    display: flex;
+    flex-direction: $orientation;
+    gap: $gap;
+}
+@mixin flex-center-both($orientation, $gap: 0){
+    display: flex;
+    flex-direction: $orientation;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
+@mixin flex-center-horizontal($orientation, $gap: 0){
+    display: flex;
+    flex-direction: $orientation;
+    @if $orientation == column{
+        align-items: center;
+    }@else{
+        justify-content: center;
+    }
+    gap: $gap;
+}
+@mixin flex-center-vertical($orientation, $gap: 0){
+    display: flex;
+    flex-direction: $orientation;
+    @if $orientation == row{
+        align-items: center;
+    }@else{
+        justify-content: center;
+    }
+    gap: $gap;
+}

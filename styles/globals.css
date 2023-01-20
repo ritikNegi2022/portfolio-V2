@@ -1,0 +1,42 @@
+:root{
+    --bg: white;
+    --main-bg: rgba(0, 0, 0, 0.3);
+    --nav-bg: var(--main-bg);
+    --container-bg: var(--main-bg);
+    --nav-title-bg: rgba(255, 255, 255, .5);
+    --nav-logo-bg: rgba(0, 0, 0, .5);
+    --nav-list-hover: rgba(255, 255, 255, 0.2);
+    --text-color: white;
+    --title-color: black;
+    --shadows: black;
+    --bg-image-style: invert(0);
+    --image-color: invert(0);
+    --text-color: invert(0);
+    --note: red;
+    --green-note: #0fe810;
+    --instagram: url('../public/icons/instagramLight.png');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-snap-type: both mandatory;
+
+}
+body{
+    position: relative;
+    background-color: var(--bg);
+}
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+}

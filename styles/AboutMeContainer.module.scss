@@ -1,0 +1,174 @@
+@use "../styles/utils/_util";
+.aboutMeContainer {
+  @include util.just-flex(column);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+}
+.aboutMeContainer::-webkit-scrollbar {
+  width: 0;
+}
+.cardHolder {
+  @include util.flex-center-both(column);
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+.cardHolder::after{
+  content: "Scroll or Swipe Up and Down for details.";
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 2vw;
+  filter: var(--text-color);
+  padding: 1rem;
+  border: 2px solid grey;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  filter: var(--text-color);
+}
+.subtitle {
+  width: 80%;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  filter: var(--image-color);
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 0 1rem;
+  }
+  ul > li::before {
+    content: "◉  ";
+  }
+}
+.cards {
+  @include util.flex-center-both(column, 2rem);
+  width: 60%;
+  aspect-ratio: 2/1;
+  background-color: var(--container-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    padding: 1rem;
+    width: 60%;
+    gap: 2rem;
+  }
+  .title {
+    width: 100%;
+    padding: 1rem;
+    font-size: 5vw;
+  }
+  .subtitle {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    font-size: 2vw;
+    ul > li {
+      font-size: 2vw;
+      padding: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .cards {
+    padding: 1rem;
+    width: 80%;
+    gap: 1rem;
+  }
+  .title {
+    width: 100%;
+    padding: 1rem;
+    font-size: 6vw;
+  }
+  .subtitle {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 4vw;
+    ul > li {
+      font-size: 5vw;
+      padding: 1rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutMeContainer{
+    flex-direction: row;
+    overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 2rem;
+  }
+  .cards {
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  .cardHolder::after{
+    font-size: 3vw;
+    content: "Scroll or Swipe Left and Right for details.";
+  }
+  .title {
+    width: 100%;
+    padding: 1rem;
+    font-size: 6vw;
+  }
+  .subtitle {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 4vw;
+    ul > li {
+      font-size: 5vw;
+      padding: 1rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+.cards {
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  .title {
+    width: 100%;
+    padding: 1rem;
+    font-size: 6vw;
+  }
+  .subtitle {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 4vw;
+    ul > li {
+      font-size: 5vw;
+      padding: 1rem !important;
+    }
+  }
+}
+
+

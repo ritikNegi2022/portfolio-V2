@@ -1,0 +1,182 @@
+@use "../styles/utils/_util";
+
+.navBar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  z-index: 99;
+  transition: width 200ms ease;
+}
+.title {
+  @include util.flex-center-vertical(row);
+  margin-bottom: 2rem;
+  cursor: pointer;
+  height: 4rem;
+  width: 100%;
+}
+.titleText {
+  @include util.flex-center-both(row);
+  transform-origin: left;
+  font-size: 2rem;
+  transform: scale(0);
+  background-color: var(--nav-title-bg);
+  backdrop-filter: blur(10px);
+  letter-spacing: 3px;
+  color: var(--title-color);
+  flex: 1;
+  height: 100%;
+  width: 0;
+}
+.title > div {
+  @include util.flex-center-both(row);
+  height: 100%;
+  background-color: var(--nav-logo-bg);
+  backdrop-filter: blur(10px);
+}
+.titleLogo {
+  width: 50px;
+  height: 50px;
+  margin: 0 1rem;
+  transition: all 200ms ease;
+  filter: invert(1);
+}
+
+.navLinks {
+  @include util.flex-center-horizontal(column, 1.5rem);
+  height: 100%;
+  list-style: none;
+}
+.listItem {
+  width: 100%;
+}
+.listItem:last-child {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+.link {
+  @include util.flex-center-vertical(row);
+  color: white;
+  text-decoration: none;
+  height: 3rem;
+  cursor: pointer;
+}
+.icons {
+  width: 2.5rem;
+  height: 2.5rem;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  margin-left: 1rem;
+  filter: invert(1) drop-shadow(0 0 5px var(--shadows));
+}
+.linkText {
+  @include util.flex-center-horizontal(row);
+  transform: scale(0);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  flex: 1;
+  transition: all 200ms ease;
+  transform-origin: left;
+  text-shadow: 0 0 10px var(--shadows);
+}
+#themeSelector {
+  display: none;
+}
+
+.label {
+  @include util.flex-center-vertical(row);
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+@media only screen and (min-width: 601px) {
+  @media (hover: hover) {
+    .navBar:hover .titleLogo {
+      transform: rotate(180deg);
+    }
+    .listItem:hover {
+      background-color: var(--nav-list-hover);
+    }
+    .listItem:hover .icons {
+      filter: invert(10%);
+    }
+    .listItem:hover .linkText {
+      text-shadow: none;
+      color: var(--text-color);
+      filter: invert(90%);
+    }
+    .navBar:hover {
+      width: 20rem;
+    }
+    .navBar:hover .linkText,
+    .navBar:hover .titleText {
+      transform: scale(1);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .navLinks {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .listItem {
+    width: auto;
+  }
+  .linkText {
+    display: none;
+  }
+  .icons {
+    margin-left: 0;
+  }
+  .title {
+    display: none;
+  }
+}
+
+:root:has(#themeSelector:checked) {
+  --bg: black;
+  --main-bg: rgba(0, 0, 0, 0.3);
+  --nav-bg: rgba(255, 255, 255, 0.3);
+  --container-bg: rgba(255, 255, 255, 0.3);
+  --nav-title-bg: rgba(0, 0, 0, 0.8);
+  --nav-logo-bg: rgba(255, 255, 255, 0.5);
+  --nav-list-hover: rgba(0, 0, 0, 0.2);
+  --text-color: white;
+  --title-color: white;
+  --bg-image-style: invert(1);
+  --image-color: invert(1);
+  --text-color: invert(1);
+  --note: #00ffff;
+  --green-note: #f017ef;
+  --invert-text: white;
+  .icons {
+    filter: invert(0);
+  }
+  .link {
+    color: black;
+  }
+  .linkText {
+    text-shadow: none;
+  }
+  @media only screen and (min-width: 601px) {
+    @media (hover: hover) {
+      .listItem:hover {
+        .icons {
+          filter: invert(90%);
+        }
+      }
+      .listItem:hover .linkText {
+        text-shadow: none;
+        color: var(--text-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@use "../styles/utils/_util";
+.homeContainer {
+  @include util.flex-center-both(column, 1rem);
+  width: 60%;
+  aspect-ratio: 2/1;
+  background-color: var(--container-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  color: black;
+  h1 {
+    width: 80%;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    font-size: 5vw;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    filter: var(--text-color);
+  }
+  h3 {
+    @include util.flex-center-both(column);
+    width: 80%;
+    font-size: 2vw;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    font-weight: lighter;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    filter: var(--text-color);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .homeContainer {
+    width: 100%;
+    padding: 2rem 0;
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 6.5vw;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    h3 {
+      font-size: 5vw;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .homeContainer {
+    width: 100%;
+    padding: 2rem 0;
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 6.5vw;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    h3 {
+      font-size: 5vw;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 1200px){
+    .homeContainer {
+    width: 80%;
+    padding: 2rem 0;
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 5vw;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    h3 {
+      font-size: 3vw;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+}

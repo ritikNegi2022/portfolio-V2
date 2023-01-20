@@ -1,0 +1,15 @@
+@use '../styles/utils/_util';
+.main{
+    @include util.just-flex(row);
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -1000;
+    overflow: visible;
+    filter: blur(1.5px);
+}
+
+
+
