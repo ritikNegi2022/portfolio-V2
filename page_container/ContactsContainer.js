@@ -6,7 +6,7 @@ function ContactsContainer() {
     const contactNumber = document.getElementById("contactNumber").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
-    const url = `https://wa.me/8800160543?text=Name: ${name}%0aE-mail: ${email}%0aContact Number: ${contactNumber}%0aMessage: ${message}`
+    const url = `https://wa.me/+918800160543?text=Name: ${name}%0aE-mail: ${email}%0aContact Number: ${contactNumber}%0aMessage: ${message}`
     window.open(url, "_blank").focus();
   }
   return (
