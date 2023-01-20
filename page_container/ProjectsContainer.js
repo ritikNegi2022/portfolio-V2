@@ -281,7 +281,11 @@ function ProjectsContainer() {
             <h3 className={classes.title}>Portfolio V2</h3>
             <div className={classes.info}>
               <div className={classes.linkHolder}>
-                <a className={classes.links} href="" target="_blank">
+                <a
+                  className={classes.links}
+                  href="https://ritiknegi2022.github.io/portfolio-v2/"
+                  target="_blank"
+                >
                   Visit
                 </a>
                 <a
