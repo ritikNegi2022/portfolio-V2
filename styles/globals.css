@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 :root{
     --bg: white;
     --main-bg: rgba(0, 0, 0, 0.3);
@@ -15,13 +16,14 @@
     --note: red;
     --green-note: #0fe810;
     --instagram: url('../public/icons/instagramLight.png');
+    --ubuntu: 'Ubuntu', sans-serif;
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-snap-type: both mandatory;
-
+    font-family: var(--ubuntu);
 }
 body{
     position: relative;
