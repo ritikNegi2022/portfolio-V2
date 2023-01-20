@@ -20,6 +20,7 @@ function ProjectsContainer() {
         <div className={classes.main}>
           <div className={classes.front}>
             <Image
+              unoptimized
               className={classes.thumbnail}
               src={Thumbnails.timer}
               alt="Timer App"
@@ -43,9 +44,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image src={ICONS.html} alt="html 5" />
-                <Image src={ICONS.css} alt="css 3" />
-                <Image src={ICONS.javascript} alt="Javascript" />
+                <Image unoptimized src={ICONS.html} alt="html 5" />
+                <Image unoptimized src={ICONS.css} alt="css 3" />
+                <Image unoptimized src={ICONS.javascript} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -62,6 +63,7 @@ function ProjectsContainer() {
         <div className={classes.main}>
           <div className={classes.front}>
             <Image
+              unoptimized
               className={classes.thumbnail}
               src={Thumbnails.secretMessenger}
               alt="Secret Messenger"
@@ -85,9 +87,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image src={ICONS.html} alt="html 5" />
-                <Image src={ICONS.css} alt="css 3" />
-                <Image src={ICONS.javascript} alt="Javascript" />
+                <Image unoptimized src={ICONS.html} alt="html 5" />
+                <Image unoptimized src={ICONS.css} alt="css 3" />
+                <Image unoptimized src={ICONS.javascript} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -105,6 +107,7 @@ function ProjectsContainer() {
         <div className={classes.main}>
           <div className={classes.front}>
             <Image
+              unoptimized
               className={classes.thumbnail}
               src={Thumbnails.movieFight}
               alt="Movie Fight"
@@ -128,9 +131,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image src={ICONS.html} alt="html 5" />
-                <Image src={ICONS.css} alt="css 3" />
-                <Image src={ICONS.javascript} alt="Javascript" />
+                <Image unoptimized src={ICONS.html} alt="html 5" />
+                <Image unoptimized src={ICONS.css} alt="css 3" />
+                <Image unoptimized src={ICONS.javascript} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -148,6 +151,7 @@ function ProjectsContainer() {
         <div className={classes.main}>
           <div className={classes.front}>
             <Image
+              unoptimized
               className={classes.thumbnail}
               src={Thumbnails.todoList}
               alt="To-Do list"
@@ -171,9 +175,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image src={ICONS.html} alt="html 5" />
-                <Image src={ICONS.css} alt="css 3" />
-                <Image src={ICONS.reactJs} alt="Javascript" />
+                <Image unoptimized src={ICONS.html} alt="html 5" />
+                <Image unoptimized src={ICONS.css} alt="css 3" />
+                <Image unoptimized src={ICONS.reactJs} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -190,6 +194,7 @@ function ProjectsContainer() {
         <div className={classes.main}>
           <div className={classes.front}>
             <Image
+              unoptimized
               className={classes.thumbnail}
               src={Thumbnails.portfolioV1}
               alt="Portfolio v1"
@@ -213,9 +218,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image src={ICONS.html} alt="html 5" />
-                <Image src={ICONS.css} alt="css 3" />
-                <Image src={ICONS.reactJs} alt="Javascript" />
+                <Image unoptimized src={ICONS.html} alt="html 5" />
+                <Image unoptimized src={ICONS.css} alt="css 3" />
+                <Image unoptimized src={ICONS.reactJs} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -233,6 +238,7 @@ function ProjectsContainer() {
         <div className={classes.main}>
           <div className={classes.front}>
             <Image
+              unoptimized
               className={classes.thumbnail}
               src={Thumbnails.meetUps}
               alt="Meet Up app"
@@ -256,9 +262,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image src={ICONS.html} alt="html 5" />
-                <Image src={ICONS.css} alt="css 3" />
-                <Image src={ICONS.nextJs} alt="Javascript" />
+                <Image unoptimized src={ICONS.html} alt="html 5" />
+                <Image unoptimized src={ICONS.css} alt="css 3" />
+                <Image unoptimized src={ICONS.nextJs} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -276,6 +282,7 @@ function ProjectsContainer() {
         <div className={classes.main}>
           <div className={classes.front}>
             <Image
+              unoptimized
               className={classes.thumbnail}
               src={Thumbnails.portfolioV2}
               alt="Portfolio v2"
@@ -295,9 +302,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image src={ICONS.html} alt="html 5" />
-                <Image src={ICONS.css} alt="css 3" />
-                <Image src={ICONS.nextJs} alt="Javascript" />
+                <Image unoptimized src={ICONS.html} alt="html 5" />
+                <Image unoptimized src={ICONS.css} alt="css 3" />
+                <Image unoptimized src={ICONS.nextJs} alt="Javascript" />
               </div>
             </div>
           </div>

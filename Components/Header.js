@@ -36,6 +36,7 @@ function Header() {
             <h3 className={classes.titleText}>Portfolio</h3>
             <div>
               <Image
+                unoptimized
                 className={classes.titleLogo}
                 src={ICONS.navLogo}
                 alt="NavBar"
@@ -49,7 +50,12 @@ function Header() {
                 scrolling("home");
               }}
             >
-              <Image className={classes.icons} src={ICONS.home} alt="Home" />
+              <Image
+                unoptimized
+                className={classes.icons}
+                src={ICONS.home}
+                alt="Home"
+              />
               <h3 className={classes.linkText}>Home</h3>
             </span>
           </li>
@@ -61,6 +67,7 @@ function Header() {
               }}
             >
               <Image
+                unoptimized
                 className={classes.icons}
                 src={ICONS.aboutMe}
                 alt="About Me"
@@ -76,6 +83,7 @@ function Header() {
               }}
             >
               <Image
+                unoptimized
                 className={classes.icons}
                 src={ICONS.projects}
                 alt="Projects"
@@ -91,6 +99,7 @@ function Header() {
               }}
             >
               <Image
+                unoptimized
                 className={classes.icons}
                 src={ICONS.contactMe}
                 alt="Contact Me"
@@ -111,6 +120,7 @@ function Header() {
                 className={classes.label}
               >
                 <Image
+                  unoptimized
                   className={classes.icons}
                   src={ICONS.themeSelector}
                   alt="Theme Selector"
