@@ -2,16 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
 }
-
+images.unoptimized = true;
 module.exports = nextConfig
 
-
-module.exports = {
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-};
 module.exports = {
   webpack(config) {
     config.module.rules.push({
