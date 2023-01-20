@@ -15,7 +15,6 @@
     --text-color: invert(0);
     --note: red;
     --green-note: #0fe810;
-    --instagram: url('../public/icons/instagramLight.png');
     --ubuntu: 'Ubuntu', sans-serif;
 }
 *{
