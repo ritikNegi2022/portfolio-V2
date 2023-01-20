@@ -1,9 +1,6 @@
 import classes from "./Header.module.scss";
-import ICONS from "../public/icons/Icons";
-import Image from "next/image";
-import Link from "next/link";
 import { useEffect } from "react";
-
+import Images from '../ImageProvider/Images'
 export let DARK_MODE = false;
 
 function Header() {
@@ -35,10 +32,9 @@ function Header() {
           <span className={classes.title}>
             <h3 className={classes.titleText}>Portfolio</h3>
             <div>
-              <Image
-                unoptimized
+              <img
                 className={classes.titleLogo}
-                src={ICONS.navLogo}
+                src={Images.navLogo}
                 alt="NavBar"
               />
             </div>
@@ -50,12 +46,7 @@ function Header() {
                 scrolling("home");
               }}
             >
-              <Image
-                unoptimized
-                className={classes.icons}
-                src={ICONS.home}
-                alt="Home"
-              />
+              <img className={classes.icons} src={Images.home} alt="Home" />
               <h3 className={classes.linkText}>Home</h3>
             </span>
           </li>
@@ -66,10 +57,9 @@ function Header() {
                 scrolling("aboutMe");
               }}
             >
-              <Image
-                unoptimized
+              <img
                 className={classes.icons}
-                src={ICONS.aboutMe}
+                src={Images.aboutMe}
                 alt="About Me"
               />
               <h3 className={classes.linkText}>About Me</h3>
@@ -82,10 +72,9 @@ function Header() {
                 scrolling("projects");
               }}
             >
-              <Image
-                unoptimized
+              <img
                 className={classes.icons}
-                src={ICONS.projects}
+                src={Images.project}
                 alt="Projects"
               />
               <h3 className={classes.linkText}>Projects</h3>
@@ -98,10 +87,9 @@ function Header() {
                 scrolling("contacts");
               }}
             >
-              <Image
-                unoptimized
+              <img
                 className={classes.icons}
-                src={ICONS.contactMe}
+                src={Images.contact}
                 alt="Contact Me"
               />
               <h3 className={classes.linkText}>Contact Me</h3>
@@ -119,10 +107,9 @@ function Header() {
                 htmlFor="Header_themeSelector__kxde7"
                 className={classes.label}
               >
-                <Image
-                  unoptimized
+                <img
                   className={classes.icons}
-                  src={ICONS.themeSelector}
+                  src={Images.theme}
                   alt="Theme Selector"
                 />
                 <h3 className={classes.linkText}>Dark</h3>

@@ -1,7 +1,5 @@
 import classes from "../styles/ProjectsContainer.module.scss";
-import Image from "next/image";
-import Thumbnails from "../public/project_Thumbnails/ProjectsThumbnails";
-import ICONS from "../public/icons/Icons";
+import Images from "../ImageProvider/Images";
 function ProjectsContainer() {
   return (
     <div className={classes.container}>
@@ -19,10 +17,9 @@ function ProjectsContainer() {
       <div className={classes.cardHolder}>
         <div className={classes.main}>
           <div className={classes.front}>
-            <Image
-              unoptimized
+            <img
               className={classes.thumbnail}
-              src={Thumbnails.timer}
+              src={Images.timer}
               alt="Timer App"
             />
             <h3 className={classes.title}>Timer</h3>
@@ -44,9 +41,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image unoptimized src={ICONS.html} alt="html 5" />
-                <Image unoptimized src={ICONS.css} alt="css 3" />
-                <Image unoptimized src={ICONS.javascript} alt="Javascript" />
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.javascript} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -62,10 +59,9 @@ function ProjectsContainer() {
       <div className={classes.cardHolder}>
         <div className={classes.main}>
           <div className={classes.front}>
-            <Image
-              unoptimized
+            <img
               className={classes.thumbnail}
-              src={Thumbnails.secretMessenger}
+              src={Images.secretMessaging}
               alt="Secret Messenger"
             />
             <h3 className={classes.title}>Secret Messenger</h3>
@@ -87,9 +83,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image unoptimized src={ICONS.html} alt="html 5" />
-                <Image unoptimized src={ICONS.css} alt="css 3" />
-                <Image unoptimized src={ICONS.javascript} alt="Javascript" />
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.javascript} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -106,10 +102,9 @@ function ProjectsContainer() {
       <div className={classes.cardHolder}>
         <div className={classes.main}>
           <div className={classes.front}>
-            <Image
-              unoptimized
+            <img
               className={classes.thumbnail}
-              src={Thumbnails.movieFight}
+              src={Images.movieFight}
               alt="Movie Fight"
             />
             <h3 className={classes.title}>Movie Fight</h3>
@@ -131,9 +126,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image unoptimized src={ICONS.html} alt="html 5" />
-                <Image unoptimized src={ICONS.css} alt="css 3" />
-                <Image unoptimized src={ICONS.javascript} alt="Javascript" />
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.javascript} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -150,10 +145,9 @@ function ProjectsContainer() {
       <div className={classes.cardHolder}>
         <div className={classes.main}>
           <div className={classes.front}>
-            <Image
-              unoptimized
+            <img
               className={classes.thumbnail}
-              src={Thumbnails.todoList}
+              src={Images.todoList}
               alt="To-Do list"
             />
             <h3 className={classes.title}>To-Do List</h3>
@@ -175,9 +169,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image unoptimized src={ICONS.html} alt="html 5" />
-                <Image unoptimized src={ICONS.css} alt="css 3" />
-                <Image unoptimized src={ICONS.reactJs} alt="Javascript" />
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.reactJs} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -193,10 +187,9 @@ function ProjectsContainer() {
       <div className={classes.cardHolder}>
         <div className={classes.main}>
           <div className={classes.front}>
-            <Image
-              unoptimized
+            <img
               className={classes.thumbnail}
-              src={Thumbnails.portfolioV1}
+              src={Images.portfolioV1}
               alt="Portfolio v1"
             />
             <h3 className={classes.title}>Portfolio-V1</h3>
@@ -218,9 +211,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image unoptimized src={ICONS.html} alt="html 5" />
-                <Image unoptimized src={ICONS.css} alt="css 3" />
-                <Image unoptimized src={ICONS.reactJs} alt="Javascript" />
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.reactJs} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -237,10 +230,9 @@ function ProjectsContainer() {
       <div className={classes.cardHolder}>
         <div className={classes.main}>
           <div className={classes.front}>
-            <Image
-              unoptimized
+            <img
               className={classes.thumbnail}
-              src={Thumbnails.meetUps}
+              src={Images.meetUp}
               alt="Meet Up app"
             />
             <h3 className={classes.title}>Next Meetups</h3>
@@ -262,9 +254,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image unoptimized src={ICONS.html} alt="html 5" />
-                <Image unoptimized src={ICONS.css} alt="css 3" />
-                <Image unoptimized src={ICONS.nextJs} alt="Javascript" />
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.nextJs} alt="Javascript" />
               </div>
             </div>
           </div>
@@ -281,10 +273,9 @@ function ProjectsContainer() {
       <div className={classes.cardHolder}>
         <div className={classes.main}>
           <div className={classes.front}>
-            <Image
-              unoptimized
+            <img
               className={classes.thumbnail}
-              src={Thumbnails.portfolioV2}
+              src={Images.portfolioV2}
               alt="Portfolio v2"
             />
             <h3 className={classes.title}>Portfolio V2</h3>
@@ -302,9 +293,9 @@ function ProjectsContainer() {
                 </a>
               </div>
               <div className={classes.icons}>
-                <Image unoptimized src={ICONS.html} alt="html 5" />
-                <Image unoptimized src={ICONS.css} alt="css 3" />
-                <Image unoptimized src={ICONS.nextJs} alt="Javascript" />
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.nextJs} alt="Javascript" />
               </div>
             </div>
           </div>
