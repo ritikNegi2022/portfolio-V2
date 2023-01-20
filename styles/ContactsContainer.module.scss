@@ -199,6 +199,8 @@
 @media only screen and (max-width: 600px) {
   .mainContainer {
     flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
   .formContainer::after {
     content: "Swipe right for Instagram link";
