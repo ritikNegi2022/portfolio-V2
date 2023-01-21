@@ -240,7 +240,7 @@ function ProjectsContainer() {
               <div className={classes.linkHolder}>
                 <a
                   className={classes.links}
-                  href="https://ritiknegi2022.github.io/meetUps/"
+                  href="https://meet-ups-kohl.vercel.app/"
                   target="_blank"
                 >
                   Visit
