@@ -312,6 +312,48 @@ function ProjectsContainer() {
           </p>
         </div>
       </div>
+      <div className={classes.cardHolder}>
+        <div className={classes.main}>
+          <div className={classes.front}>
+            <img
+              className={classes.thumbnail}
+              src={Images.blindChat}
+              alt="Blind Chat"
+            />
+            <h3 className={classes.title}>Blind Chat</h3>
+            <div className={classes.info}>
+              <div className={classes.linkHolder}>
+                <a
+                  className={classes.links}
+                  href="https://blind-chat-frontend.vercel.app/"
+                  target="_blank"
+                >
+                  Visit
+                </a>
+                <a
+                  className={classes.links}
+                  href="https://github.com/ritikNegi2022/Blind_Chat_Frontend"
+                  target="_blank"
+                >
+                  Github
+                </a>
+              </div>
+              <div className={classes.icons}>
+                <img src={Images.html} alt="html 5" />
+                <img src={Images.css} alt="css 3" />
+                <img src={Images.nextJs} alt="Javascript" />
+              </div>
+            </div>
+          </div>
+          <p className={classes.projectInfo}>
+            <span className={classes.greenNote}>
+              The project does for screen size.
+            </span>
+            This is my most recent creation. In it, I've built a real-time chat
+            application using both the frontend and the backend.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
